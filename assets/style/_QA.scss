@@ -1,0 +1,54 @@
+.bannerList {
+    bottom: 0;
+    //不熟悉如何使.bannerList自適應父元素
+    
+}
+.banner-qa{
+    background-image: url(../images/qa.png);
+    height: 304px;
+}
+.bannerTitle {
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 700;
+    margin-right: 10.1px;
+}
+
+.qa-title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 63px;
+    padding-top: 88px;
+}
+.card {
+    border: 1px solid #000;
+    &-item:not(.active) .up{
+        display: none;
+    }
+    // &-item:not(.active) .card-item-body{
+        // display: none;
+    // }嘗試失敗
+    &-item.active .down{
+        display: none;
+    }
+    &-item-header,&-item-body{
+        padding: 22px 39px 22px 38px;
+        border-bottom: 1px solid #000;
+    }
+    &-item-header{
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: bold;
+        a{
+            color: #000;
+        }
+    }
+    &-item-body{
+        font-size: 16px;
+        line-height: 24px;
+        background: #F2F2F2;
+        // &:last-child{
+        //     border-bottom: none;
+        // }  //這邊的選取方式出了甚麼問題呢?無法針對最後一個項目設定
+    }
+}
